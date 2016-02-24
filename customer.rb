@@ -8,4 +8,7 @@ class Customer
     @basket = []
   end
 
+  def take_money_off(pet)
+    return  @customer.wallet - pet.price
+  end
 end

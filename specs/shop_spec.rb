@@ -44,4 +44,6 @@ class TestShop < MiniTest::Test
      @shop.remove_item_from_stock #no arguments as @stock exisits in shop already
       assert_equal(3,@stock.size)
   end
+
+  
 end
