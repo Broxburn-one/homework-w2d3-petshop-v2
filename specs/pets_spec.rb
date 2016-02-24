@@ -11,4 +11,7 @@ class TestPets < MiniTest::Test
     assert_equal('Antelope', @pet1.species)
   end
 
+  def test_pet_has_price
+    assert_equal(50, @pet1.price)
+  end
 end
