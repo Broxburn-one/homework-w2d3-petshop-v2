@@ -8,8 +8,6 @@ class Customer
     @basket = []
   end
 
-  def add_pet_to_basket(pet)
-    @basket<<pet
-  end
+  
 
 end

@@ -1,4 +1,5 @@
 class Shop
+
   attr_reader :stock, :till
   
   def initialize(stock)
@@ -7,4 +8,7 @@ class Shop
   end
 
 
+  def add_item_to_basket(customer,item)
+      return customer.basket<< item
+  end
 end
