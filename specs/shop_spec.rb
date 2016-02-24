@@ -17,4 +17,8 @@ class TestShop < MiniTest::Test
     assert_equal(4, @shop.stock.size)
   end
 
+  def test_till_has_funds
+    assert_equal(100, @shop.till)
+  end
+
 end
