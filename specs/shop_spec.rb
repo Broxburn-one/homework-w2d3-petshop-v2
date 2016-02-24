@@ -32,11 +32,16 @@ class TestShop < MiniTest::Test
     assert_equal(0,@customer_2.basket.size)
   end
 
- 
+
   # customer buys pet, this will have 3 tests beneath it
   def test_basket_has_pet
-    @shop.add_item_to_basket(@customer_2,@stock[0].species)
+    @shop.add_item_to_basket(@customer_2,@stock[3].species)
     assert_equal(1, @customer_2.basket.size)
-    # assert_equal("Lion", @customer_2.basket.first)
+    assert_equal("Monkey", @customer_2.basket.first)
+  end
+  
+  def test_item_removed_from_stock
+     @shop.remove_item_from_stock #no arguments as @stock exisits in shop already
+      assert_equal(3,@stock.size)
   end
 end

@@ -8,6 +8,4 @@ class Customer
     @basket = []
   end
 
-  
-
 end
