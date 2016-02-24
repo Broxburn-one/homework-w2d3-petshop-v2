@@ -4,12 +4,12 @@ require_relative('../pets')
 
 class TestShop < MiniTest::Test
   def setup
-    @pet2 = Pets.new('Lion', 500)
-    @pet3 = Pets.new('Tiger', 600)
-    @pet4 = Pets.new('Zebra', 100)
-    @pet5 = Pets.new('Monkey', 200)
+    @lion = Pets.new('Lion', 500)
+    @tiger = Pets.new('Tiger', 600)
+    @zebra = Pets.new('Zebra', 100)
+    @monkey = Pets.new('Monkey', 200)
 
-    @stock = [@pet2, @pet3, @pet4, @pet5]
+    @stock = [@lion, @tiger, @zebra, @monkey]
     @shop = Shop.new( @stock )
   end
 
