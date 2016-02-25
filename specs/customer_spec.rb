@@ -32,6 +32,6 @@ class TestPets < MiniTest::Test
   # end
   def test_wallet_has_less_money
     @customer_2.take_money_off(@monkey.price)
-    assert_equal(2800,@customer_2.wallet)
+    assert_equal(2800, @customer_2.wallet)
   end
 end
